@@ -1,64 +1,64 @@
-LearnMate - AI assistant for smarter learning and study support..docx
-LearnMate - AI assistant for smarter learning and study support.
-Description
-AI StudyBuddy  is an AI-powered learning assistance platform developed to simplify the study process for students by leveraging modern web technologies and Generative AI. The application provides an intelligent backend system that enables students to upload study materials, generate concise summaries, create flashcards, produce quizzes, and receive personalized study plans through AI-generated responses. The backend is developed using Node.js and Express.js, following a RESTful API architecture that ensures scalability, maintainability, and secure communication between the frontend and backend services. MongoDB serves as the primary NoSQL database, while Mongoose ODM provides schema validation, data modeling, and efficient database interactions. To secure user information and protected resources, the application implements JWT (JSON Web Token) based authentication along with Role-Based Access Control (RBAC). Users are authenticated before accessing AI-powered features, ensuring that only authorized users can utilize premium learning services. Passwords are securely encrypted using bcryptjs, preventing unauthorized access to user credentials.
+# LearnMate - AI StudyBuddy
 
-One of the key highlights of AI StudyBuddy  is its integration with the Google Gemini AI API, which enables the application to perform advanced natural language processing tasks. Instead of relying on predefined templates, the backend dynamically communicates with the Gemini model to generate high-quality educational content based on the study material provided by the user.
+### An AI Assistant for Smarter Learning and Study Support
 
-Scenario-Based Case Study
-Background
-Rahul is a second-year engineering student preparing for multiple semester examinations while simultaneously learning new technical skills for internships and placement opportunities. His study materials are scattered across lecture notes, PDFs, textbooks, online articles, and handwritten notes, making it difficult to organize and revise effectively. Due to the large volume of content and limited preparation time, Rahul often struggles to identify important concepts, create revision notes, and evaluate his understanding before examinations.
+## 1. Project Overview
+LearnMate is an AI-powered learning assistance platform developed to simplify and enhance the study process for students. In today's fast-paced academic environment, students often struggle with vast amounts of study materials. LearnMate solves this by leveraging modern web technologies and Generative AI to provide instant, intelligent study support.
 
-Traditional study methods require significant manual effort to summarize lengthy materials, prepare practice questions, and create revision schedules. This process is repetitive, time-consuming, and often results in inconsistent learning outcomes.
+## 2. Project Description
+AI StudyBuddy is an AI-powered learning assistance platform developed to simplify the study process for students by leveraging modern web technologies and Generative AI. 
 
-Problem
-Rahul encounters several challenges during his preparation:
+The application provides an intelligent backend system that enables students to upload study materials (PDFs, Docs, Notes), generate concise summaries, create flashcards, produce quizzes, and receive personalized study plans through AI-generated responses.
 
-Difficulty understanding lengthy study materials within limited time.
-Manual preparation of notes consumes a significant amount of study time.
-Creating flashcards and revision questions is repetitive and labor-intensive.
-Lack of personalized study plans based on available time and examination schedules.
-No centralized platform to securely store AI-generated learning resources.
-Difficulty assessing knowledge through self-generated quizzes.
-Switching between multiple applications for note-taking, quizzes, and scheduling reduces productivity.
-Solution
-The AI StudyBuddy  backend provides a centralized, AI-powered learning platform that automates several academic tasks through intelligent content generation. The system enables authenticated users to upload or enter study materials and leverage the Google Gemini AI API to generate educational resources automatically.
+The backend is developed using Node.js and Express.js, following a RESTful API architecture that ensures scalability, performance, and seamless integration with AI models.
 
-The backend processes incoming requests through secure RESTful APIs and performs the following operations:
+## 3. Problem Statement
+- Students face difficulty in summarizing large study materials
+- Lack of personalized study planning
+- Time-consuming process to create flashcards and quizzes for revision
+- No single platform for all study assistance needs
 
-Authenticates users using JWT-based security.
-Stores user information and study resources in MongoDB.
-Sends study content to the Google Gemini AI model through dedicated AI service modules.
-Generates concise summaries for faster revision.
-Creates flashcards for active recall learning.
-Produces multiple-choice quizzes for self-assessment.
-Generates personalized study plans based on user preferences and examination timelines.
-Stores generated learning resources for future retrieval and continuous learning.
-By separating authentication, business logic, database operations, and AI processing into modular components, the backend ensures maintainability, scalability, and efficient request handling.
+## 4. Proposed Solution
+Our solution is to build an all-in-one AI Study Companion that:
+- Uses Generative AI to summarize lengthy notes into short, easy-to-understand points
+- Automatically generates flashcards for quick revision
+- Creates interactive quizzes from uploaded content to test knowledge
+- Provides personalized study plans based on student's learning pace
 
-Usage
-Student Usage
-Students register and log in to the application before accessing AI-powered learning features. After authentication, they can upload study material or provide textual content and choose the desired AI functionality, such as generating summaries, quizzes, flashcards, or personalized study plans. The generated content can be reviewed immediately and stored for future reference.
+## 5. Key Features
+- **Smart Document Upload:** Support for PDF, DOCX, TXT files
+- **AI Summarization:** Get concise summaries in seconds
+- **Flashcard Generator:** Auto-generate Q&A flashcards
+- **Quiz Generator:** Create MCQs and Q&A from your notes
+- **Personalized Study Planner:** AI-based daily/weekly study plans
+- **User-Friendly Dashboard:** Simple and clean UI for students
 
-Administrator Usage
-Administrators manage registered users, monitor application activity, oversee system usage, and maintain platform integrity. Administrative privileges include managing user accounts, monitoring AI service utilization, reviewing system logs, and ensuring smooth backend operations.
+## 6. Tech Stack
+- **Frontend:** HTML, CSS, JavaScript / React.js
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **AI & ML:** Generative AI, NLP APIs
+- **Architecture:** RESTful API Architecture
+- **Tools:** Git, GitHub, VS Code
 
-Outcome
-By integrating artificial intelligence with a secure backend architecture, AI StudyBuddy  significantly improves the learning experience for students. Manual preparation time is reduced through automated content generation, allowing students to focus more on understanding concepts rather than organizing study materials.
+## 7. System Architecture
+User -> Frontend (React) -> Backend (Node.js API) -> Generative AI Model -> Database (MongoDB) -> Response to User. The architecture follows a scalable MVC pattern ensuring high performance and security.
 
-The implementation of JWT authentication, MongoDB data management, and Google Gemini AI integration ensures that educational resources are generated securely, efficiently, and consistently. The modular backend architecture further supports future enhancements, enabling additional AI-powered learning capabilities to be integrated with minimal architectural changes.
+## 8. Team Details
+- **Team ID:** SWTID-2026-6814
+- **Team Size:** 5 Members
+- **Team Leader:** SANIYA MIRZA S
+- **Team Members:**
+    - SANGAVI R
+    - SHAJNA B
+    - SRIRI M
+    - SUGUNA M
 
-As a result, AI StudyBuddy  serves as a scalable and intelligent educational platform that enhances productivity, promotes effective revision, and supports personalized learning for students preparing for academic examinations and competitive assessments.
+## 9. Future Scope
+- Voice-based AI tutor
+- Mobile application for LearnMate
+- Integration with LMS platforms like Moodle
+- Multi-language support
 
-Software Requirements
-Operating System: Windows 10/11, macOS, or Linux (supports cross-platform operations).
-Node.js (v16 or above): Runtime ecosystem running server logic and routing infrastructure.
-npm (v8 or above): Node package manager to control operational dependencies.
-Express.js: Lightweight routing web framework to construct backend RESTful entry points.
-MongoDB: Document NoSQL engine storing users, posts, categories, comments, and analytics metrics.
-Postman: API verification toolkit to assert schema validation responses across administrative route shields.
-Code Editor: Visual Studio Code or similar IDE environment.
-Hardware Requirements
-Processor: Intel Core i5 (8th Gen or above) / AMD Ryzen 5 or equivalent.
-RAM: 8 GB minimum (16 GB recommended for concurrent instances of MongoDB, processing layers, and execution nodes).
-Storage: 1 GB of available disk workspace.
+## 10. Project Links
+- **GitHub Repository:** https://github.com/saniya1313m/AI-StudyBuddy-Assistant
