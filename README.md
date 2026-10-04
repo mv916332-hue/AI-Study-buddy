@@ -59,6 +59,3 @@ User -> Frontend (React) -> Backend (Node.js API) -> Generative AI Model -> Data
 - Mobile application for LearnMate
 - Integration with LMS platforms like Moodle
 - Multi-language support
-
-## 10. Project Links
-- **GitHub Repository:** https://github.com/saniya1313m/AI-StudyBuddy-Assistant
